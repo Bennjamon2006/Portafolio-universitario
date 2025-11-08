@@ -102,7 +102,7 @@ await Promise.all(
 
 const notFound = await render(baseHTML, "/any-page");
 
-writeFileSync(join(dist, "notFound.html"), notFound.html);
+writeFileSync(join(dist, "404.html"), notFound.html);
 console.log(`Page not found generated`);
 
 writeFileSync(join(dist, "pages.json"), JSON.stringify(pages));
