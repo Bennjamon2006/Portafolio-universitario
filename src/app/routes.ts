@@ -1,0 +1,29 @@
+import { createRoutes, Paths, Route } from "@/core/routing/Route";
+
+const routes = createRoutes([
+  {
+    path: "/",
+    loader: () => import("@/app/pages/Home"),
+    useModal: false,
+  },
+  {
+    path: "/projects",
+    loader: () => import("@/app/pages/Projects"),
+    useModal: true,
+  },
+  {
+    path: "/projects/:project",
+    loader: () => import("@/app/pages/ProjectDetail"),
+    useModal: false,
+  },
+]);
+
+export const fallback: Route<"/*"> = {
+  path: "/*",
+  loader: () => import("@/app/pages/NotFound"),
+  useModal: false,
+};
+
+export type AppPath = Paths<typeof routes>;
+
+export default routes;
