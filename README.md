@@ -58,7 +58,7 @@ Esto permite que tanto el servidor, el cliente o el entorno de build usen los mi
 
 El proyecto evita frameworks monolíticos: prioriza **control total y optimización** sobre soluciones “mágicas” que abstraen, pero también restringen.
 
-## Flujp de publicación
+## Flujo de publicación
 
 Los cambios se publican mediante el comando:
 
