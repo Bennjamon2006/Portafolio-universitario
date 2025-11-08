@@ -111,4 +111,3 @@ console.log("Pages props generated");
 await vite.close();
 
 console.log(`Build time: ${Date.now() - init}ms`);
-4;

@@ -57,3 +57,13 @@ Esto permite que tanto el servidor, el cliente o el entorno de build usen los mi
 ### Control total antes que magia pesada
 
 El proyecto evita frameworks monolíticos: prioriza **control total y optimización** sobre soluciones “mágicas” que abstraen, pero también restringen.
+
+## Flujp de publicación
+
+Los cambios se publican mediante el comando:
+
+```sh
+npm run publish
+```
+
+Lo que autonatiza procesos de build, versionado, publicación de cambios en Git y despliegue a producción.
