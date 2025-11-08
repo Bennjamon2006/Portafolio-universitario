@@ -1,4 +1,3 @@
-import photo from "@/app/assets/photo.png";
 import Link from "@/app/components/Link";
 import styles from "@/app/styles/Home.module.css";
 import { github, linkedin, source } from "@/shared/constants";
@@ -15,7 +14,7 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <section className={styles.photo}>
-          <img src={photo} alt="Foto" />
+          <img src="/assets/photo.png" alt="Foto" />
         </section>
         <section className={styles.title}>
           <h1>Bienvenido A Mi Portafolio Universitario</h1>

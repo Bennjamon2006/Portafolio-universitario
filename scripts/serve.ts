@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static(dist));
 
 app.use((req, res) => {
-  res.sendFile(resolve(dist, "notFound.html"));
+  res.sendFile(resolve(dist, "404.html"));
 });
 
 app.listen(3000, () => {
