@@ -16,6 +16,11 @@ const routes = createRoutes([
     loader: () => import("@/app/pages/ProjectDetail"),
     useModal: false,
   },
+  {
+    path: "/contenido",
+    loader: () => import("./pages/Content"),
+    useModal: true,
+  },
 ]);
 
 export const fallback: Route<"/*"> = {

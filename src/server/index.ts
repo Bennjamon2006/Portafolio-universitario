@@ -17,10 +17,6 @@ const vite = await createServer({
   appType: "custom",
 });
 
-const render = (
-  (await vite.ssrLoadModule("@/server/render.tsx")) as typeof import("./render")
-).default;
-
 const matchRoute = (
   (await vite.ssrLoadModule(
     "@/shared/utils/matchRoute.ts"
@@ -54,6 +50,12 @@ app.use(async (req, res) => {
   try {
     const init = Date.now();
     const path = req.path;
+
+    const render = (
+      (await vite.ssrLoadModule(
+        "@/server/render.tsx"
+      )) as typeof import("./render")
+    ).default;
 
     const html = await vite.transformIndexHtml(path, plainHTML);
 

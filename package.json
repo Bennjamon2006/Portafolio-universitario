@@ -1,6 +1,6 @@
 {
   "name": "portafolio",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "scripts": {
     "dev": "ts-node src/server/index.ts",
     "start": "ts-node scripts/serve.ts",

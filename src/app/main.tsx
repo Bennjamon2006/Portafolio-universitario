@@ -2,6 +2,7 @@ import RouterProvider from "@/core/routing/Router.provider";
 import matchRoute from "@/shared/utils/matchRoute";
 import { hydrateRoot } from "react-dom/client";
 import Outlet from "./components/Outlet";
+import "./styles/globals.css";
 
 const initialRoute = matchRoute(window.location.pathname);
 const module = await initialRoute.route.loader();

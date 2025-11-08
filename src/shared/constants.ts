@@ -27,3 +27,11 @@ export const appVersion = await (async () => {
 
   return meta.content;
 })();
+
+export const source =
+  "https://github.com/Bennjamon2006/Portafolio-universitario";
+
+export const github = "https://github.com/Bennjamon2006";
+
+export const linkedin =
+  "https://www.linkedin.com/in/benjam%C3%ADn-alexis-rivas-beltr%C3%A1n-185579366";
