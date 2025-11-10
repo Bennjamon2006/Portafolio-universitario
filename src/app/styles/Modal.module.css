@@ -1,5 +1,5 @@
 .modal__wrapper {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--overlay-bg);
   position: absolute;
   top: 0;
   left: 0;
@@ -19,19 +19,21 @@
   transition: top 0.75s ease-in;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
 }
 
 .modal.visible {
   top: 50%;
 }
 
+/* 🧭 HEADER */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--header-border);
+  background: var(--header-bg);
   backdrop-filter: blur(6px);
 }
 
@@ -40,16 +42,17 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: #ccc;
+  color: var(--subfont);
 }
 
 .header h1 {
   text-align: center;
   font-size: 1rem;
-  color: #fff;
+  color: var(--font);
   margin: 0;
 }
 
+/* ❌ CLOSE BUTTON */
 .close__wrapper {
   display: flex;
   align-items: center;
@@ -60,7 +63,7 @@
 .close__wrapper button {
   background: none;
   border: none;
-  color: #ccc;
+  color: var(--icon);
   font-size: 1.5rem;
   line-height: 1;
   cursor: pointer;
@@ -68,9 +71,10 @@
 }
 
 .close__wrapper button:hover {
-  color: #fff;
+  color: var(--icon-hover);
 }
 
+/* 📄 MAIN */
 .main {
   width: 100%;
   height: 100%;
