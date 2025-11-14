@@ -1,0 +1,23 @@
+.card {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}

@@ -41,7 +41,11 @@ export default function useView() {
 
     if (route.useModal) {
       setModal(
-        <Modal closeRef={closeRef} onClose={close}>
+        <Modal
+          closeRef={closeRef}
+          onClose={close}
+          visible={modal !== null && modal !== undefined}
+        >
           {currentPage}
         </Modal>
       );

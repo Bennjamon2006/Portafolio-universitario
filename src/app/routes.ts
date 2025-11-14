@@ -7,18 +7,23 @@ const routes = createRoutes([
     useModal: false,
   },
   {
-    path: "/projects",
-    loader: () => import("@/app/pages/Projects"),
+    path: "/contenido",
+    loader: () => import("./pages/Content"),
     useModal: true,
   },
   {
-    path: "/projects/:project",
-    loader: () => import("@/app/pages/ProjectDetail"),
-    useModal: false,
+    path: "/contenido/sobre-el-proyecto",
+    loader: () => import("./pages/NotFound"),
+    useModal: true,
   },
   {
-    path: "/contenido",
-    loader: () => import("./pages/Content"),
+    path: "/contenido/sobre-mi",
+    loader: () => import("./pages/NotFound"),
+    useModal: true,
+  },
+  {
+    path: "/contenido/proyectos",
+    loader: () => import("./pages/Projects"),
     useModal: true,
   },
 ]);

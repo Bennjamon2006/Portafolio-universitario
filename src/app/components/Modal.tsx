@@ -7,10 +7,16 @@ interface Props {
   children: React.ReactNode;
   closeRef: RefObject<CloseFN | null>;
   onClose: () => void;
+  visible?: boolean;
 }
 
-export default function Modal({ children, closeRef, onClose }: Props) {
-  const [visible, setVisible] = useState(false);
+export default function Modal({
+  children,
+  closeRef,
+  onClose,
+  visible: isVisible,
+}: Props) {
+  const [visible, setVisible] = useState(isVisible ?? false);
 
   closeRef.current = (cb) => {
     setVisible(false);
